@@ -333,8 +333,8 @@
                 NSArray * upperComponents = [line componentsSeparatedByString:@":"];
                 if (upperComponents != nil && [upperComponents count] > 1) {
                     NSArray * components = [[upperComponents objectAtIndex:1] componentsSeparatedByString:@";"];
-                    if ([components count] >= 2)
-                        for (int i = 0; i < 2; i ++) {
+                    if ([components count] >= 1)
+                        for (int i = 0; i < 1; i ++) {
                             if (i == 0) {
                                 result = ABRecordSetValue(person, kABPersonLastNameProperty, (CFStringRef)[components objectAtIndex:i], &error);
                             } else {
